@@ -1,6 +1,6 @@
 ## 🧠 Overview
 This repository accompanies the manuscript _"Dynamic Embeddedness within the Structural Connectome Orchestrates Macroscale Functional Organization of the Human Brain"_.
-
+![Conceptual summary of structural connectome embeddedness](resource/conceptual_summary.jpg)
 In this study, we introduce the concept of structural connectome embeddedness and propose a new quantitative measure, the connectome-driven embedding (_CoDE_), that captures the topological smoothness of functional activity patterns over the structural connectome.
 
 Here, we provide the core code for computing _CoDE_, along with a concise tutorial illustrating its application using quasi-periodic pattern (QPP) data. The QPP dataset used in the tutorial is publicly available at [Github](https://github.com/GT-EmoryMINDlab) [1]. 
@@ -26,6 +26,36 @@ The `/data` folder contains the input datasets used in the tutorial example for 
 To comply with data-use policies and avoid redistribution of large public datasets used in the study (e.g., HCP and AHBA), the full empirical datasets are not included in this capsule. 
 Instead, we provide minimal example data that allow users to reproduce the CoDE computation pipeline and test its application on fMRI data.
 By replacing the input data, the pipeline can be readily applied to reproduce additional results related to structural connectome embeddedness reported in the literature.
+
+## 📄 Usage
+This repository provides two complementary ways to run the structural connectome embeddedness analysis, depending on the desired level of interaction.
+### ▶️ One-step execution (script-based)
+First, navigate to the code directory
+```
+cd /path/to/Structural-Connectome-Embeddedness/code
+```
+
+You can then run the full analysis for the QPP-based embeddedness example using:
+```
+python main.py
+```
+
+This command executes the complete CoDE computation pipeline in a single step.
+All generated outputs and intermediate results will be saved to the results/ directory.
+
+### 📓 Step-by-step execution (interactive Jupyter notebook)
+
+Alternatively, the analysis can be explored interactively using a Jupyter notebook:
+
+`/path/to/Structural-Connectome-Embeddedness/code/tutorial.ipynb`
+
+
+This notebook walks through the CoDE computation pipeline step by step, allowing users to inspect intermediate results, modify parameters, and better understand each component of the analysis.
+
+> Notes: The provided scripts and notebook are intended to demonstrate the CoDE analysis pipeline.
+By replacing the input data, the same pipeline can be applied to reproduce and explore related analyses of structural connectome embeddedness.
+
+
 
 ## Reference
 1. Yousefi, B. & Keilholz, S. Propagating patterns of intrinsic activity along macroscale gradients coordinate functional connections across the whole brain. _Neuroimage_ 231, 117827 (2021).
