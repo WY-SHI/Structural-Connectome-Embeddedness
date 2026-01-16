@@ -28,32 +28,41 @@ Instead, we provide minimal example data that allow users to reproduce the CoDE 
 By replacing the input data, the pipeline can be readily applied to reproduce additional results related to structural connectome embeddedness reported in the literature.
 
 ## 📄 Usage
-This repository provides two complementary ways to run the structural connectome embeddedness analysis, depending on the desired level of interaction.
+This repository provides two complementary ways to run the structural connectome embeddedness analysis, depending on the desired level of interaction. 
+
+> **Note:** The analysis relies on relative paths. For both execution modes, please ensure that the working directory is set to  
+> `/path/to/Structural-Connectome-Embeddedness/code` before running any scripts or notebooks.
+
 ### ▶️ One-step execution (script-based)
 First, navigate to the code directory
-```
+```bash
 cd /path/to/Structural-Connectome-Embeddedness/code
 ```
 
 You can then run the full analysis for the QPP-based embeddedness example using:
-```
+```bash
 python main.py
 ```
 
-This command executes the complete CoDE computation pipeline in a single step.
-All generated outputs and intermediate results will be saved to the results/ directory.
+This command executes the complete analysis pipeline in a single step.
+All generated outputs and intermediate results will be saved to the `/path/to/Structural-Connectome-Embeddedness/results/` directory.
 
 ### 📓 Step-by-step execution (interactive Jupyter notebook)
 
-Alternatively, the analysis can be explored interactively using a Jupyter notebook:
+Alternatively, the analysis can be explored interactively using a Jupyter notebook. 
+First, navigate to the code directory
+```bash
+cd /path/to/Structural-Connectome-Embeddedness/code
+```
 
-`/path/to/Structural-Connectome-Embeddedness/code/tutorial.ipynb`
+Then open and run the tutorial notebook: `/path/to/Structural-Connectome-Embeddedness/code/tutorial.ipynb`
 
 
-This notebook walks through the CoDE computation pipeline step by step, allowing users to inspect intermediate results, modify parameters, and better understand each component of the analysis.
+This notebook walks through the analysis pipeline step by step, allowing users to inspect intermediate results, modify parameters, and better understand each component of the workflow.
 
 > Notes: The provided scripts and notebook are intended to demonstrate the CoDE analysis pipeline.
 By replacing the input data, the same pipeline can be applied to reproduce and explore related analyses of structural connectome embeddedness.
+
 
 
 
