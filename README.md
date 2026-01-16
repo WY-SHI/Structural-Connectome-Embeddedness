@@ -69,9 +69,9 @@ Other analyses based on open-source code are __not included__ in this repository
 | Analysis                                 | Toolbox / Package | Source / Link      | Related Figures |
 |------------------------------------------|--------------------|--------------------|-----------------|
 | Brain visualization                      | **surfplot**        | [Document Link](https://surfplot.readthedocs.io/en/latest/)      | All figures     |
-| Gene set enrichment analysis (GSEA)      | **GSEApy**         | [Document Link](https://gseapy.readthedocs.io/en/latest/)      | Figure 3        |
-| Dynamic mean-field (DMF) model           | **fastDMF**        | [GitLab Link](https://www.gitlab.com/concog/fastdmf)        | Figure 4        |
-| Partial least squares correlation (PLSC) | **myPLS**          | [GitHub Link](https://github.com/MIPLabCH/myPLS)        | Figure 5        |
+| Gene set enrichment analysis (GSEA)      | **GSEApy**         | [Document Link](https://gseapy.readthedocs.io/en/latest/)      | Figure 4        |
+| Dynamic mean-field (DMF) model           | **fastDMF**        | [GitLab Link](https://www.gitlab.com/concog/fastdmf)        | Figure 5        |
+| Partial least squares correlation (PLSC) | **myPLS**          | [GitHub Link](https://github.com/MIPLabCH/myPLS)        | Figure 6        |
 
 
 For any questions regarding the data or code, please contact Weiyang Shi (shiweiyang2017@ia.ac.cn).
