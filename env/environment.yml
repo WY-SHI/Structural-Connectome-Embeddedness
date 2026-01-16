@@ -14,3 +14,4 @@ dependencies:
       - proplot==0.9.7
       - neuromaps
       - tqdm
+      - ipykernel
