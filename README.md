@@ -11,7 +11,7 @@ This repository is intended to facilitate transparent implementation, reproducib
 ```
 conda env create -f ./env/environment.yml
 conda activate CoDE
-python -c "import numpy, pandas, matplotlib, seaborn, scipy, proplot; import neuromaps; print('Environment setup successful!')"
+python -c "import numpy, pandas, matplotlib, seaborn, scipy, proplot; import neuromaps; print('Environment setup successful')"
 ```
 
 ## 🧩 Data Description
