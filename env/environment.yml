@@ -1,0 +1,16 @@
+name: CoDE
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8.5
+  - matplotlib=3.4.3
+  - numpy=1.22.0
+  - pandas=1.5.3
+  - scipy=1.10.1
+  - seaborn=0.12.0
+  - pip
+  - pip:
+      - proplot==0.9.7
+      - neuromaps
+      - tqdm
