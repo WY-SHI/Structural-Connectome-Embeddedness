@@ -56,7 +56,7 @@ if __name__ == '__main__':
             result.append([list(QPP_data.columns)[i], CoDE, p])
 
         result_df = pd.DataFrame(result, columns=['TR', 'CoDE', 'pval'])
-        result_df.to_csv(f'../{save_path}/{QPP}_CoDE.csv', index=False)
+        result_df.to_csv(f'{save_path}/{QPP}_CoDE.csv', index=False)
 
     is_save = True
 
@@ -68,7 +68,7 @@ if __name__ == '__main__':
                                 [1, 1, 3, 3, 3, 4, 5]],
                                 refnum=1, refaspect=1, figwidth='17cm', share=False, wspace=(None, 8, None, None, 8, 3), hspace=(4))
         
-        CoDE_df = pd.read_csv(f'../{save_path}/{QPP}_CoDE.csv', index_col=0)
+        CoDE_df = pd.read_csv(f'{save_path}/{QPP}_CoDE.csv', index_col=0)
         QPP_df  = pd.read_csv(f'../data/{QPP}.csv')
 
         map_data = np.array(QPP_df).T
@@ -180,7 +180,7 @@ if __name__ == '__main__':
         axs.format(abc='a', abcloc='l',
                 suptitle='CoDE tracks signal propagation along functional gradient {} (G{}) across QPP{}.'.format(gradient_term[-1], gradient_term[-1], idx+1))
         
-        if save_path:
+        if is_save:
             fig.save('{}/CoDE-{}-G{}.jpg'.format(save_path, QPP, gradient_term[-1]), dpi=300)
         plt.close(fig)
     print('All results have been saved in {}'.format(save_path))
